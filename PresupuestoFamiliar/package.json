@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
+    "vite": "^7.2.2",
     "vitest": "^3.2.4"
   }
 }
