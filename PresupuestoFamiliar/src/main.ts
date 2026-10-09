@@ -284,6 +284,9 @@ document.addEventListener("keydown", (evento: KeyboardEvent) => {
   } else if (evento.key === "3") {
     ejecutarAccion("posponer", gastoSeleccionado ?? "");
   } else if (evento.key === "Enter") {
+    if (evento.target instanceof HTMLButtonElement) {
+      return;
+    }
     ejecutarAccion("avanzar");
   }
 });
